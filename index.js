@@ -1,6 +1,6 @@
 const URL = "https://ghibliapi.herokuapp.com/films";
 
-let data = [];
+// let data = [];
 axios
 	.get(URL)
 	.then((res) => {
@@ -23,7 +23,12 @@ axios
                     <tr>
                 `;
 			listFilm.innerHTML += itemHTML;
-		}
+            document
+                    .getElementById("getData")
+                    .addEventListener("click", function (event) {
+                        document.getElementById("films").innerHTML += itemHTML;
+                    });
+        }
 	})
 	.catch((err) => {
 		err;

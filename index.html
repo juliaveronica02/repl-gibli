@@ -3,12 +3,16 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
-		<title>repl.it</title>
+        <title>repl.it</title>
+        <link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<button id="getData">Get Data</button>
-		<table>
+        <button id="getData">Get Data</button>
+            <div class="row">
+                <div class="col">
+                    <table class="table">
 			<thead>
+				<th>No</th>
 				<!-- ignore warning here-->
 				<th>Title</th>
 				<!-- ignore warning here-->
@@ -17,7 +21,10 @@
 				<th>Rating</th>
 			</thead>
 			<tbody id="films"></tbody>
-		</table>
+        </table>
+    </div>
+    </div>
+</div>
 		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 		<script src="index.js"></script>
 	</body>
