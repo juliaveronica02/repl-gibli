@@ -5,6 +5,7 @@ axios
 	.get(URL)
 	.then((res) => {
 		data = res.data;
+		console.log(data);
 		const listFilm = document.getElementById("films");
 		for (let i = 1; i <= 10; i++) {
 			let no = i;
@@ -28,7 +29,7 @@ axios
 		err;
 	});
 
-// code lama => ini code mu sebelumnya cobak bandingkan 
+// code lama => ini code mu sebelumnya cobak bandingkan
 
 // axios
 // 	.get(URL)
